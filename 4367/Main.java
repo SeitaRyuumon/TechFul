@@ -11,8 +11,6 @@ class Main {
 		int result	= 0;
 
 		Scanner scan = new Scanner(System.in);
-		// scan.useDelimiter(" |¥n");
-		System.out.println("ok");
 
 		for (int i = 0; i < 3; i++) {
 			L.add(scan.nextInt());
@@ -22,49 +20,29 @@ class Main {
 
 		// 長い順にソート
 		Collections.sort(L, Collections.reverseOrder());
-
-		// Display in sort order
-		System.out.println("sort by (DSC):");
-		for (int var : L) {
-			System.out.println(var);
-		}
 		
 		int a = L.get(0) - L.get(1);
 		int b = L.get(1) - L.get(2);
 		int c = L.get(2) - Dist;
 		if ( a <= Dist && b >= Dist ) {
-			// Do compare <3>
-			System.out.println("<3>:");
 			result = 3;
 		}
 		if ( a >= Dist && b <= Dist ) {
-			// Do compare <1>
-			System.out.println("<1>:");
 			result = 1;
 			if ( c <= 1 ) {
-				// Do compare <2>
-				System.out.println("<2>:");
 				result = 2;
 			}
 		}
 		if ( a >= Dist && b >= Dist ) {
-			// Do compare <3>
-			System.out.println("<3>:");
 			result = 3;
 		}
 		if ( a <= Dist && b <= Dist ) {
-			// Do compare <1> 
-			System.out.println("<1>:");
 			result = 1;
 			if ( c <= 1 ) {
-				// Do compare <2>
-				System.out.println("<2>:");
-				result = 2;
 			}
 		}
 		if (a == Dist && b == Dist) {
-			// Do nothing
-			System.out.println("<nothing>:");
+			result = 0;
 		}
 
 		// Display the result
@@ -80,7 +58,6 @@ class Main {
 		} else {
 			// Do nothing
 		}
-		System.out.println("result:");
 		for (int var : L) {
 			System.out.println(var);
 		}
