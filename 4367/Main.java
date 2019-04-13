@@ -29,19 +29,37 @@ class Main {
 		
 		int a = L.get(0) - L.get(1);
 		int b = L.get(1) - L.get(2);
+		int c = L.get(2) - Dist;
 		if ( a <= Dist && b >= Dist ) {
 			// Do compare <3>
 			System.out.println("<3>:");
-
 		}
-		if ( a >= Dist && b <= Dist) {
+		if ( a >= Dist && b <= Dist ) {
 			// Do compare <1>
 			System.out.println("<1>:");
+			if ( c <= 1 ) {
+				// Do compare <2>
+				System.out.println("<2>:");
+			}
 		}
-		if (a >= Dist && b >= Dist) {
+		if ( a >= Dist && b >= Dist ) {
 			// Do compare <3>
 			System.out.println("<3>:");
 		}
+		if ( a <= Dist && b <= Dist ) {
+			// Do compare <1> 
+			System.out.println("<1>:");
+			if ( c <= 1 ) {
+				// Do compare <2>
+				System.out.println("<2>:");
+			}
+		}
+		if (a == Dist && b == Dist) {
+			// Do nothing
+			System.out.println("<nothing>:");
+		}
+
+		
 
 	}
 }
