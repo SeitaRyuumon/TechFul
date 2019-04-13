@@ -1,4 +1,7 @@
-# vscode files
+# vscode workspace file
+*.code-workspace
+
+# vscode config file
 .vscode/*
 
 # Compiled class file
