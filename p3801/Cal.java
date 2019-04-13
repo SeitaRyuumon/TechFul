@@ -1,4 +1,4 @@
-package techFul;
+package p3801;
 
 public class Cal {
 	public static int[][] minus(int i[][]) {

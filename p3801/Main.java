@@ -1,9 +1,9 @@
-package techFul;
+package p3801;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
-import techFul.Cal.*;
+import p3801.Cal.*;
 
 public class Main {
 
