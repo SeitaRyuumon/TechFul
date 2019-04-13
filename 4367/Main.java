@@ -31,11 +31,16 @@ class Main {
 		int b = L.get(1) - L.get(2);
 		if ( a <= Dist && b >= Dist ) {
 			// Do compare <3>
-			System.out.println("3");
+			System.out.println("<3>:");
+
 		}
 		if ( a >= Dist && b <= Dist) {
 			// Do compare <1>
-			System.out.println("1");
+			System.out.println("<1>:");
+		}
+		if (a >= Dist && b >= Dist) {
+			// Do compare <3>
+			System.out.println("<3>:");
 		}
 
 	}
