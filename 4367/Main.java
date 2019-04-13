@@ -7,7 +7,8 @@ import java.util.ArrayList;
 class Main {
 	public static void main(String[] args) {
 		ArrayList<Integer> L = new ArrayList<>();
-		int Dist = 0;
+		int Dist 	= 0;
+		int result	= 0;
 
 		Scanner scan = new Scanner(System.in);
 		// scan.useDelimiter(" |¥n");
@@ -33,25 +34,31 @@ class Main {
 		if ( a <= Dist && b >= Dist ) {
 			// Do compare <3>
 			System.out.println("<3>:");
+			result = 3;
 		}
 		if ( a >= Dist && b <= Dist ) {
 			// Do compare <1>
 			System.out.println("<1>:");
+			result = 1;
 			if ( c <= 1 ) {
 				// Do compare <2>
 				System.out.println("<2>:");
+				result = 2;
 			}
 		}
 		if ( a >= Dist && b >= Dist ) {
 			// Do compare <3>
 			System.out.println("<3>:");
+			result = 3;
 		}
 		if ( a <= Dist && b <= Dist ) {
 			// Do compare <1> 
 			System.out.println("<1>:");
+			result = 1;
 			if ( c <= 1 ) {
 				// Do compare <2>
 				System.out.println("<2>:");
+				result = 2;
 			}
 		}
 		if (a == Dist && b == Dist) {
@@ -59,7 +66,17 @@ class Main {
 			System.out.println("<nothing>:");
 		}
 
-		
+		// Display the result
+		if ( result == 1 ) {
+			L.set(1, L.get(1) - Dist);
+			L.set(2, L.get(2) - Dist);
+		} else if ( result == 2 ) {
+			// no
+		} else if ( result == 3 ) {
+			// no
+		} else {
+			// 0
+		}
 
 	}
 }
