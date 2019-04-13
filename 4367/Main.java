@@ -23,6 +23,7 @@ class Main {
 		// 長い順にソート
 		Collections.sort(L, Collections.reverseOrder());
 
+		// Display in sort order
 		System.out.println("sort by (DSC):");
 		for (int var : L) {
 			System.out.println(var);
@@ -68,14 +69,20 @@ class Main {
 
 		// Display the result
 		if ( result == 1 ) {
-			L.set(1, L.get(1) - Dist);
-			L.set(2, L.get(2) - Dist);
+			L.set(1, L.get(0) - Dist);
+			L.set(2, L.get(1) - Dist);
 		} else if ( result == 2 ) {
-			// no
+			L.set(2, L.get(1) - Dist);
+			L.set(0, L.get(1) + Dist);
 		} else if ( result == 3 ) {
-			// no
+			L.set(1, L.get(2) + Dist);
+			L.set(0, L.get(1) + Dist);
 		} else {
-			// 0
+			// Do nothing
+		}
+		System.out.println("result:");
+		for (int var : L) {
+			System.out.println(var);
 		}
 
 	}
