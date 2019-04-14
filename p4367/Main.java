@@ -1,3 +1,5 @@
+package p4367;
+
 import java.util.Collections;
 import java.util.Scanner;
 

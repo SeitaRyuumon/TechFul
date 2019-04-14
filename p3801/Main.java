@@ -16,7 +16,8 @@ public class Main {
 		
 		str_[0] = scan.nextLine().split(" ");
 		str_[1] = scan.nextLine().split(" ");
-		
+		scan.close();
+
 		for (int i = 0; i < 2; i++) {
 			for (int j = 0; j < 5; j++) {
 				num_[i][j] = Integer.parseInt(str_[i][j]);
