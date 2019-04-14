@@ -2,7 +2,7 @@
 *.code-workspace
 
 # vscode config file
-**/.vscode/**
+.vscode
 
 # Compiled class file
 *.class
